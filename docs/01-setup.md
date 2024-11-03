@@ -40,7 +40,7 @@ post("Hello World!");
 
 You should see "Hello World!" in the Max window, like in this screenshot:
 
-![Setup Screenshot](js-live-api-setup.png)
+![Setup Screenshot](../js-live-api-setup.png)
 
 ## Next Steps
 
