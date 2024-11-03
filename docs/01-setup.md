@@ -33,3 +33,15 @@ Pro tip: Learn Max keyboard shortcuts. If you type "n" in an unlocked device, it
 ### Testing it Out
 
 Every time you save the code in Max's JavaScript editor, it will run. As a quick test, try this simple program:
+
+```javascript
+post("Hello World!");
+```
+
+You should see "Hello World!" in the Max window, like in this screenshot:
+
+![Setup Screenshot](js-live-api-setup.png)
+
+## Next Steps
+
+Alright! Now you're ready to write JavaScript programs inside Ableton Live. In the next article, we'll learn how to set some useful utility code to help us debug our scripts.
