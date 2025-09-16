@@ -28,10 +28,10 @@ New versions of these tutorials are available for Max 9's new `v8` object. You n
 
 ## JavaScript Engines
 
-Towards the end of 2024, Max started a transition from an older `js` engine (Max 8, ES5-only) to a modern one (`v8` in Max 9). Live 12.2 bundles Max 9, so `v8` is available out-of-the-box.
+Towards the end of 2024, Max started a transition from an older <code class="max-object">js</code> engine (Max 8, ES5-only) to a modern one (<code class="max9-object">v8</code> in Max 9). Live 12.2 bundles Max 9, so <code class="max9-object">v8</code> is available out-of-the-box.
 
-- Max 8 `js`: ES5-only, slower; still usable for legacy.
-- Max 9 `v8`: modern JavaScript, significantly faster; recommended.
+- Max 8 <code class="max-object">js</code>: ES5-only, slower; still usable for legacy.
+- Max 9 <code class="max9-object">v8</code>: modern JavaScript, significantly faster; recommended.
 
 If you are on Live 12.2+ (or have standalone Max 9), prefer `v8`. The code here generally works on both.
 
@@ -49,7 +49,7 @@ If you are on Live 12.2+ (or have standalone Max 9), prefer `v8`. The code here 
 
 ## Limitations
 
-Real-time audio-rate processing is not feasible in `js`/`v8` inside Max’s low-priority thread. Build tools that:
+Real-time audio-rate processing is not feasible in <code class="max-object">js</code>/<code class="max9-object">v8</code> inside Max’s low-priority thread. Build tools that:
 
 - React to UI at human rates
 - Use timers
@@ -67,7 +67,7 @@ JavaScript in Live is especially well-suited to Live MIDI Tools (Generators and 
 
 ## Tutorials
 
-- Getting Started: set up a Max for Live device and `js`/`v8` code
+- Getting Started: set up a Max for Live device and <code class="max-object">js</code>/<code class="max9-object">v8</code> code
 - Real Time MIDI Processing: modify notes on the fly
 - The Max Console: robust logging and debugging
 - The Live API: objects, properties, functions, and paths

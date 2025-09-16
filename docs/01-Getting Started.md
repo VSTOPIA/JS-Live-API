@@ -8,7 +8,7 @@ permalink: /docs/01-Getting%20Started.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/getting-started/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
 This tutorial shows how to set up a Max for Live device to run JavaScript code.
 
@@ -54,7 +54,7 @@ Now that we’ve decided to use a Max MIDI Effect device, let’s create a new o
 
 We left the `midiin` and `midiout` objects there so MIDI will pass through the device.
 
-## Creating a `js` Max object
+## Creating a <code class="max-object">js</code> Max object
 
 In the Max patch editor for our new device:
 
@@ -64,7 +64,7 @@ In the Max patch editor for our new device:
 ![Max js object](https://adammurray.link/max-for-live/js-in-live/getting-started/max-js-object.png)
 
 3. Lock the patch (either click the lock icon in the lower left or type `command+E`/`ctrl+E`).
-4. Double click the `js` object to open Max’s JavaScript editor.
+4. Double click the <code class="max-object">js</code> object to open Max’s JavaScript editor.
 5. When the JavaScript editor window opens, save the file with the same `{filename}.js` you typed into the object box. Save it in the same folder as the Max device. By default, the Save dialog should prefill the desired filename:
 
 ![Saving the js file](https://adammurray.link/max-for-live/js-in-live/getting-started/saving-the-js-file.png)
@@ -81,7 +81,7 @@ You should see “Hello World!” in the Max Console (you can open the console f
 
 ![Max for Live js setup](https://adammurray.link/max-for-live/js-in-live/getting-started/max-for-live-js-setup.png)
 
-The error “can’t find file {filename}.js” happened when we first added the `js` object to the patch. `js` looked for the given filename in the same folder as the device, but we hadn’t saved it yet, so it printed this error when we were setting things up.
+The error “can’t find file {filename}.js” happened when we first added the <code class="max-object">js</code> object to the patch. <code class="max-object">js</code> looked for the given filename in the same folder as the device, but we hadn’t saved it yet, so it printed this error when we were setting things up.
 
 That error should be fixed now. If you see “Hello World!” then it’s working. As a sanity check, you can change the code and save it again:
 

@@ -7,7 +7,7 @@ title: JS Live API Tutorials
 
 > Attribution: This repository adapts and redistributes tutorial content by Adam Murray under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Original series: https://adammurray.link/max-for-live/js-in-live/ — Changes have been made. This project is not endorsed by Adam Murray or Cycling '74.
 
-> <span class="tip-marker">[!TIP]</span> New versions of these tutorials are available for Max 9's new `v8` object. You need Live 12.2 or higher (or standalone Max 9) to use it. `v8` supports modern syntax, is much faster, and has quality-of-life improvements in its integration with Max and Live. Highly recommended.
+> <span class="tip-marker">[!TIP]</span> New versions of these tutorials are available for Max 9's new <code class="max9-object">v8</code> object. You need Live 12.2 or higher (or standalone Max 9) to use it. <code class="max9-object">v8</code> supports modern syntax, is much faster, and has quality-of-life improvements in its integration with Max and Live. Highly recommended.
 
 ## Table of Contents
 
@@ -66,17 +66,17 @@ One last point. You aren't making some big compromise by choosing to use JavaScr
 
 Towards the end of 2024, Max started a transition from a very old and slow JavaScript engine to a fast and modern one. This is great news, but it will take time to transition.
 
-Through February 2025, Live comes bundled with Max 8 and the old original `js` object. Max 9 released a few months ago and comes with the new JavaScript engine in a new `v8` object. People who own Max 9 as a standalone application can configure Live to use it for Max for Live. At some point, Live will be bundled with Max 9.
+Through February 2025, Live comes bundled with Max 8 and the old original <code class="max-object">js</code> object. Max 9 released a few months ago and comes with the new JavaScript engine in a new <code class="max9-object">v8</code> object. People who own Max 9 as a standalone application can configure Live to use it for Max for Live. At some point, Live will be bundled with Max 9.
 
-Update: Live 12.2 with Max 9 launched in June 2025. If you have Live 12.2 or higher, check out the new versions of these tutorials for Max 9's new `v8` object.
+Update: Live 12.2 with Max 9 launched in June 2025. If you have Live 12.2 or higher, check out the new versions of these tutorials for Max 9's new <code class="max9-object">v8</code> object.
 
-For now, these tutorials remain focused on the old `js` object. This means most "modern" JavaScript features cannot be used. If you are using `v8`, all of the code here should work; `v8` is intended to be backward compatible. The `v8` tutorials will show better/simpler ways to do things with modern JavaScript syntax and features.
+For now, these tutorials remain focused on the old <code class="max-object">js</code> object. This means most "modern" JavaScript features cannot be used. If you are using <code class="max9-object">v8</code>, all of the code here should work; <code class="max9-object">v8</code> is intended to be backward compatible. The <code class="max9-object">v8</code> tutorials will show better/simpler ways to do things with modern JavaScript syntax and features.
 
-### Max 8 and the Original `js` Object
+### Max 8 and the Original <code class="max-object">js</code> Object
 
 The JavaScript engine in Max 8 is ES5‑only. Notably, you cannot use `let` or `const` (use `var`). You can transpile modern JavaScript with Babel or TypeScript into a single ES5 `.js` file for use in the Max for Live device.
 
-### Max 9 and the New `v8` Object
+### Max 9 and the New <code class="max9-object">v8</code> Object
 
 Max 9 introduced `v8` (and `v8.codebox`) based on the V8 engine powering Node.js and Chrome. It brings modern syntax support and performance improvements. Everyone using Live 12.2+ can now use `v8` in Max for Live devices.
 
@@ -84,7 +84,7 @@ Max 9 introduced `v8` (and `v8.codebox`) based on the V8 engine powering Node.js
 
 Read “Getting Started” to learn how to setup a Max for Live device with JavaScript.
 
-Have feedback or questions? Email me: <a href="mailto:adam@adammurray.link">adam@adammurray.link</a> (check spam for replies)
+Have feedback or questions? Email the developer: <a href="mailto:adam@adammurray.link">adam@adammurray.link</a> (check spam for replies)
 
 <p align="center">
   <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />

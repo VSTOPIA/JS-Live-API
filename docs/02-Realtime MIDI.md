@@ -8,9 +8,9 @@ permalink: /docs/02-Realtime%20MIDI.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
-This tutorial builds on the setup from “Getting Started.” You should be comfortable creating Max for Live devices with `js` objects. Before diving into debugging with the Max Console and the Live API, we’ll build a simple real-time MIDI processor.
+This tutorial builds on the setup from “Getting Started.” You should be comfortable creating Max for Live devices with <code class="max-object">js</code> objects. Before diving into debugging with the Max Console and the Live API, we’ll build a simple real-time MIDI processor.
 
 We will alter MIDI in real time by changing the pitch based on simple rules. You can play a MIDI clip in Live or a hardware controller, and JavaScript will change the pitches on the fly.
 
@@ -79,13 +79,13 @@ You can inspect this by connecting that outlet to the right inlet of a message b
 
 ![midiparse note outlet data](https://adammurray.link/max-for-live/js-in-live/realtime-midi/midiparse-note-outlet-data.png)
 
-Route that outlet into a `js` object to handle notes in code:
+Route that outlet into a <code class="max-object">js</code> object to handle notes in code:
 
 ![Route notes to js](https://adammurray.link/max-for-live/js-in-live/realtime-midi/route-notes-to-js.png)
 
-## Passing Notes Through `js`
+## Passing Notes Through <code class="max-object">js</code>
 
-In `js`, define a `list()` handler to receive `[pitch velocity]` and pass it through:
+In <code class="max-object">js</code>, define a `list()` handler to receive `[pitch velocity]` and pass it through:
 
 ```javascript
 function list() {

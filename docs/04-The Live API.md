@@ -8,7 +8,7 @@ permalink: /docs/04-The%20Live%20API.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
 This is a follow-up to the “The Max Console” tutorial. Start with another new Max MIDI Effect device, as explained in “Getting Started”.
 
@@ -214,7 +214,7 @@ device parent:  "live_set tracks 0"
 
 ## Safely Constructing a `LiveAPI` Object
 
-Some of this tutorial used top-level code in `js` for exploration. In real devices, avoid constructing `LiveAPI` at top-level during device initialization. You may see errors like:
+Some of this tutorial used top-level code in <code class="max-object">js</code> for exploration. In real devices, avoid constructing `LiveAPI` at top-level during device initialization. You may see errors like:
 
 ```
 The Max function “SendMessage” returned with error 2: Bad parameter value.

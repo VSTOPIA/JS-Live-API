@@ -8,7 +8,7 @@ permalink: /docs/03-The%20Max%20Console.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
 This is a follow-up to the JavaScript in Live tutorial “Real Time MIDI Processing”. In this tutorial, start with another new Max MIDI Effect device, as explained in “Getting Started”.
 
@@ -48,13 +48,13 @@ Try right-clicking a message for more features.
 
 ## The Built-in `post()` Function
 
-Like in “Getting Started”, run this JavaScript code using a `js` object in a Max device:
+Like in “Getting Started”, run this JavaScript code using a <code class="max-object">js</code> object in a Max device:
 
 ```javascript
 post("Hello");
 ```
 
-You should see `js • Hello` in the Max Console.
+You should see <code class="max-object">js</code> • Hello in the Max Console.
 
 Print multiple messages:
 
@@ -81,7 +81,7 @@ The first time may still appear on one line; run twice. Example:
 
 ![Console newlines](https://adammurray.link/max-for-live/js-in-live/max-console/max-console-newlines.png)
 
-The `js •` prefix indicates the message came from a `js` object.
+The <code class="max-object">js</code> • prefix indicates the message came from a <code class="max-object">js</code> object.
 
 ## A Custom `log()` Function
 
@@ -217,7 +217,7 @@ function log() {
 
 ## Reporting Errors
 
-Max’s `js` object has an `error()` function similar to `post()` that prints with a reddish background. Create a `warn()` function:
+Max’s <code class="max-object">js</code> object has an `error()` function similar to `post()` that prints with a reddish background. Create a `warn()` function:
 
 ```javascript
 function log() { /* same as above */ }
