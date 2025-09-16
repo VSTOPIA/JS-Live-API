@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: The Max Console
 permalink: /docs/03-The%20Max%20Console.html
 ---

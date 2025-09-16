@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: The Live API
 permalink: /docs/04-The%20Live%20API.html
 ---
