@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: The Live API
+permalink: /docs/04-The%20Live%20API.html
 ---
 
 # The Live API

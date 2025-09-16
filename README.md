@@ -70,11 +70,11 @@ JavaScript in Live is especially well-suited to Live MIDI Tools (Generators and 
 Direct links to the updated series:
 
 - Overview: https://adammurray.link/max-for-live/js-in-live/
-- Getting Started: [docs/01-Getting Started.md](docs/01-Getting%20Started.md)
-- Real Time MIDI Processing: [docs/02-Realtime MIDI.md](docs/02-Realtime%20MIDI.md)
-- The Max Console: [docs/03-The Max Console.md](docs/03-The%20Max%20Console.md)
-- The Live API: [docs/04-The Live API.md](docs/04-The%20Live%20API.md)
-- Generating MIDI Clips: [docs/05-Generating MIDI Clips.md](docs/05-Generating%20MIDI%20Clips.md)
+- Getting Started: [docs/01-Getting Started](docs/01-Getting%20Started.html)
+- Real Time MIDI Processing: [docs/02-Realtime MIDI](docs/02-Realtime%20MIDI.html)
+- The Max Console: [docs/03-The Max Console](docs/03-The%20Max%20Console.html)
+- The Live API: [docs/04-The Live API](docs/04-The%20Live%20API.html)
+- Generating MIDI Clips: [docs/05-Generating MIDI Clips](docs/05-Generating%20MIDI%20Clips.html)
 
 ## Code Examples
 

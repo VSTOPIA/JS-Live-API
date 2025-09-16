@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Generating MIDI Clips
+permalink: /docs/05-Generating%20MIDI%20Clips.html
 ---
 
 # Generating MIDI Clips

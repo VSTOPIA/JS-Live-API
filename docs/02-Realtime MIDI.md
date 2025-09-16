@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: page
 title: Real Time MIDI Processing
+permalink: /docs/02-Realtime%20MIDI.html
 ---
 
 # Real Time MIDI Processing

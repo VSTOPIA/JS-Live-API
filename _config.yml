@@ -1,6 +1,17 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-readme-index
+  - jekyll-relative-links
+
+readme_index:
+  enabled: true
+  remove_originals: false
+  with_frontmatter: false
+
+relative_links:
+  enabled: true
+  collections: true
 
 sass:
   style: compressed
