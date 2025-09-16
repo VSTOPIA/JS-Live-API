@@ -34,3 +34,18 @@ blockquote:has(> p:contains("[!TIP]")) {
 blockquote p:first-child {
   /* remove the [!TIP] marker text visually if present */
 }
+
+/* Center all images by default and keep them responsive */
+img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make the small edit button image much smaller */
+img[src$="edit-device-button.png"] {
+  width: 48px;
+  height: auto;
+  margin: 0.5rem auto;
+}
