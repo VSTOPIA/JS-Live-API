@@ -52,14 +52,14 @@ Now that we’ve decided to use a Max MIDI Effect device, let’s create a new o
 
 ![New Max MIDI Effect patch](https://adammurray.link/max-for-live/js-in-live/getting-started/new-max-midi-effect-patch.png)
 
-We left the `midiin` and `midiout` objects there so MIDI will pass through the device.
+We left the <code class="max-object">midiin</code> and <code class="max-object">midiout</code> objects there so MIDI will pass through the device.
 
 ## Creating a <code class="max-object">js</code> Max object
 
 In the Max patch editor for our new device:
 
 1. Add an object to the Max patch (either drag an “Object” from the top toolbar or type `n` in an unlocked patch).
-2. Type `js {filename}.js` into the object box, where `{filename}` is something descriptive for the patch, such as the name of the device.
+2. Type <code class="max-object">js {filename}.js</code> into the object box, where `{filename}` is something descriptive for the patch, such as the name of the device.
 
 ![Max js object](https://adammurray.link/max-for-live/js-in-live/getting-started/max-js-object.png)
 

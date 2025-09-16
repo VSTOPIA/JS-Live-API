@@ -49,11 +49,11 @@ By convention: velocity == 0 → “note off”, velocity > 0 → “note on”.
 
 ## Intercepting MIDI Note Events
 
-A fresh Max MIDI Effect device passes MIDI through from `midiin` → `midiout`:
+A fresh Max MIDI Effect device passes MIDI through from <code class="max-object">midiin</code> → <code class="max-object">midiout</code>:
 
 ![Default MIDI passthrough](https://adammurray.link/max-for-live/js-in-live/realtime-midi/default-midi-passthrough.png)
 
-To intercept note events while passing everything else, split the stream with `midiparse` and recombine with `midiformat`, then `midiout`:
+To intercept note events while passing everything else, split the stream with <code class="max-object">midiparse</code> and recombine with <code class="max-object">midiformat</code>, then <code class="max-object">midiout</code>:
 
 ![Parsed passthrough](https://adammurray.link/max-for-live/js-in-live/realtime-midi/parsed-midi-passthrough.png)
 
@@ -71,7 +71,7 @@ You should hear the instrument playing:
 
 If not, debug before proceeding.
 
-The leftmost outlet of `midiparse` outputs two-item lists `[pitch velocity]` for note on/off:
+The leftmost outlet of <code class="max-object">midiparse</code> outputs two-item lists `[pitch velocity]` for note on/off:
 
 ![midiparse tooltip](https://adammurray.link/max-for-live/js-in-live/realtime-midi/midiparse-tooltip.png)
 

@@ -78,7 +78,7 @@ The JavaScript engine in Max 8 is ES5‑only. Notably, you cannot use `let` or `
 
 ### Max 9 and the New <code class="max9-object">v8</code> Object
 
-Max 9 introduced `v8` (and `v8.codebox`) based on the V8 engine powering Node.js and Chrome. It brings modern syntax support and performance improvements. Everyone using Live 12.2+ can now use `v8` in Max for Live devices.
+Max 9 introduced <code class="max9-object">v8</code> (and <code class="max9-object">v8.codebox</code>) based on the V8 engine powering Node.js and Chrome. It brings modern syntax support and performance improvements. Everyone using Live 12.2+ can now use <code class="max9-object">v8</code> in Max for Live devices.
 
 ## Next Steps
 
