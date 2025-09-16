@@ -4,6 +4,24 @@ A series of tutorials and examples for controlling Ableton Live with JavaScript 
 
 > Attribution: This repository adapts and redistributes tutorial content by Adam Murray under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Original series: https://adammurray.link/max-for-live/js-in-live/ — Changes have been made. This project is not endorsed by Adam Murray or Cycling '74.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Video Tutorial](#video-tutorial)
+- [Prerequisites](#prerequisites)
+- [Tutorial Series](#tutorial-series)
+  - [#1 Setup](docs/01-setup.md)
+  - [#2 Logging & Debugging](docs/02-logging.md)
+  - [#3 API Basics](docs/03-api-basics.md)
+  - [#4 Working with MIDI Clips](#4-working-with-midi-clips)
+    - [Part A: Reading MIDI Data](docs/04-midi-clips.md)
+    - [Part B: Writing MIDI Data](docs/04-midi-clips-b.md)
+  - [#5 Building a User Interface](docs/05-user-interface.md)
+  - [#6 Going Deeper](docs/06-going-deeper.md)
+- [Code Examples](#code-examples)
+- [Credits](#credits)
+- [License](#license)
+
 ## Overview
 
 This repository contains code examples and tutorials for programming Ableton Live using JavaScript via Max for Live. The series is designed for developers who own Ableton Live 9 Suite and are comfortable with JavaScript programming.
@@ -117,3 +135,13 @@ Key concepts covered:
 ## Code Examples
 
 ### Working with MIDI Clips
+
+## Credits
+
+- Primary tutorial content by Adam Murray — see [CREDITS.md](CREDITS.md) for full attribution and links.
+- This repository adapts and reorganizes materials for educational, non-commercial use. Not endorsed by Adam Murray or Cycling '74.
+
+## License
+
+- Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- See the [LICENSE](LICENSE) file for details.
