@@ -59,13 +59,11 @@ MIDI occurs at lower rates and works well for algorithmic composition and perfor
 
 JavaScript in Live is especially well-suited to Live MIDI Tools (Generators and Transformers) that are not in the audio signal path.
 
-> <blockquote class="warning">⚠️ <strong>Important</strong>
->
-> Even when working at suitable rates like MIDI, JavaScript cannot be relied on for consistent, accurate timing at all times. JavaScript in Max runs on the lower-priority thread; anything in the real-time signal chain (MIDI → instruments → audio → effects) should ideally happen in the high-priority thread for stable, low-latency timing. Other system activity can load the low-priority thread and cause unpredictable timing.
->
-> Real time processing in JavaScript in Max for Live should not be relied on for live performance scenarios (unless timing sloppiness and unpredictable latency is acceptable for the style of music). Extensive testing before live performance usage is highly recommended.
->
-> I strongly recommend against trying to make commercial products with JavaScript that do real time processing in Max for Live. You can't expect it to work perfectly all the time on random people's computers.</blockquote>
+<blockquote class="warning">⚠️ <strong>Important</strong>
+<p>Even when working at suitable rates like MIDI, JavaScript cannot be relied on for consistent, accurate timing at all times. JavaScript in Max runs on the lower-priority thread; anything in the real-time signal chain (MIDI → instruments → audio → effects) should ideally happen in the high-priority thread for stable, low-latency timing. Other system activity can load the low-priority thread and cause unpredictable timing.</p>
+<p>Real time processing in JavaScript in Max for Live should not be relied on for live performance scenarios (unless timing sloppiness and unpredictable latency is acceptable for the style of music). Extensive testing before live performance usage is highly recommended.</p>
+<p>I strongly recommend against trying to make commercial products with JavaScript that do real time processing in Max for Live. You can't expect it to work perfectly all the time on random people's computers.</p>
+</blockquote>
 
 ## Tutorials
 
