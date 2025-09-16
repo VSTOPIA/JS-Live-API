@@ -78,3 +78,8 @@ code.max9-object {
   white-space: nowrap; /* widely supported */
   text-wrap: nowrap;   /* future-friendly */
 }
+
+/* Distinct color for v8 labels */
+code.max9-object {
+  color: #e6b482 !important;
+}
