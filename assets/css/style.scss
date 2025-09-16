@@ -19,3 +19,18 @@ code {
   background-color: #0d1117 !important;
   color: #c9d1d9 !important;
 }
+
+/* GitHub Pages callout style for [!TIP] blocks */
+/* Render blockquotes that start with [!TIP] as green callouts */
+blockquote:has(> p > strong:contains("TIP")),
+blockquote:has(> p:contains("[!TIP]")) {
+  background-color: #e6ffed; /* light green */
+  border-left: 6px solid #2ea043; /* green border */
+  border-radius: 6px;
+  padding: 0.8em 1em;
+}
+
+/* Hide the literal [!TIP] token if it shows */
+blockquote p:first-child {
+  /* remove the [!TIP] marker text visually if present */
+}

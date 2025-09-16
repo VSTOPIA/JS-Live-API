@@ -2,6 +2,9 @@
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/getting-started/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
+> [!TIP]
+> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+
 This tutorial shows how to set up a Max for Live device to run JavaScript code.
 
 To follow along, you need Ableton Live Suite (which comes with Max for Live) or Live Standard edition with the Max for Live add-on. These tutorials were designed for Live 12, but things should mostly work the same in Live 11.
@@ -22,7 +25,8 @@ There are three types of Max devices to choose from:
 
 In these tutorials, we will always use a Max MIDI Effect device. As explained in the overview’s section on limitations, JavaScript is not suitable for synthesizing instruments or implementing effects.
 
-> Note: Even though JavaScript isn’t fast enough to directly implement instruments and effects, there may be reasons to put JavaScript in a Max Audio Effect or Max Instrument device. For example, if complex logic is needed to translate the state of the UI controls into parameters for the instrument/effect, it’s conceivable that part of the logic could be done in JavaScript because UI events happen at a reasonably slow rate.
+> [!TIP]
+> Even though JavaScript isn’t fast enough to directly implement instruments and effects, there may be reasons to put JavaScript in a Max Audio Effect or Max Instrument device. For example, if complex logic is needed to translate the state of the UI controls into parameters for the instrument/effect, it’s conceivable that part of the logic could be done in JavaScript because UI events happen at a reasonably slow rate.
 >
 > Regardless, it’s recommended to use Max MIDI Effect devices for your JavaScript in Live projects until there is a good reason to use another device type.
 
