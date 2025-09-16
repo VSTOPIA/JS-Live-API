@@ -13,5 +13,9 @@ relative_links:
   enabled: true
   collections: true
 
+# Make relative markdown links on Pages resolve to .html automatically
+markdown_ext: "md,mkd,mkdn,markdown"
+permalink: pretty
+
 sass:
   style: compressed
