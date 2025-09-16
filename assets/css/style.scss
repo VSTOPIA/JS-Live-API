@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Dark theme for code blocks only */
+pre, pre.highlight, div.highlighter-rouge, figure.highlight {
+  background-color: #0d1117 !important; /* GitHub dark background */
+  color: #c9d1d9 !important;            /* GitHub dark foreground */
+  border-radius: 6px;
+}
+
+pre code, pre.highlight code, code.highlighter-rouge {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+code {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
