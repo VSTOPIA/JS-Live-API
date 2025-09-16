@@ -1,5 +1,7 @@
 # Working with MIDI Clips - Part A: Reading MIDI Data
 
+> Attribution: Content adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes have been made. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 This is part of a series of articles about hacking on Ableton Live with JavaScript. These articles assume you own Ableton Live 9 Suite and are comfortable coding JavaScript.
 
 In this article we'll learn how to access the notes inside a MIDI clip. This material continues in the second half of this article, where we'll modify the notes and write them back to the MIDI clip.
