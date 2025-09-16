@@ -16,19 +16,14 @@ pre code, pre.highlight code, code.highlighter-rouge, div.highlight code, figure
   color: inherit !important;
 }
 
-/* GitHub Pages callout style for [!TIP] blocks */
-/* Render blockquotes that start with [!TIP] as green callouts */
-blockquote:has(> p > strong:contains("TIP")),
-blockquote:has(> p:contains("[!TIP]")) {
+/* Callout style for blockquotes (TIP notes) */
+blockquote {
   background-color: #006b1e; /* dark green */
   border-left: 6px solid #2ea043; /* green border */
   border-radius: 6px;
   padding: 0.8em 1em;
 }
-/* Hide the literal [!TIP] token if it shows */
-blockquote p:first-child {
-  /* remove the [!TIP] marker text visually if present */
-}
+/* End callout style */
 /* Max/MSP-like inline code label for "js" object */
 code.max9-object {
   border-radius: 0;
