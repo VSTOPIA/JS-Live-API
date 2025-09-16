@@ -2,7 +2,8 @@
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-A newer version of this tutorial uses Max 9’s `v8` JavaScript engine (Live 12.2+). The `v8` engine is faster and supports modern JS. This page covers the legacy `js` method.
+> [!TIP]
+> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
 
 This tutorial builds on the setup from “Getting Started.” You should be comfortable creating Max for Live devices with `js` objects. Before diving into debugging with the Max Console and the Live API, we’ll build a simple real-time MIDI processor.
 
