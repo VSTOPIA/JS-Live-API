@@ -60,3 +60,21 @@ img[src$="edit-device-button.png"] {
   margin: 0 0.25rem !important; /* small inline spacing, not centered */
   vertical-align: middle !important;
 }
+
+/* Max/MSP-like inline object label for `js` or `v8` when used as <code class="max-object">js</code> */
+code.max-object,
+code.max9-object {
+  border-radius: 0;
+  padding: 0 5px;
+  background-color: #333;
+  color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  font-size: 0.8em;
+  border-top: 4px solid #808080;
+  border-bottom: 4px solid #808080;
+  text-shadow: none;
+  line-height: normal;
+  white-space: nowrap; /* widely supported */
+  text-wrap: nowrap;   /* future-friendly */
+}
