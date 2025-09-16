@@ -67,6 +67,54 @@ img[src$="edit-device-button.png"] {
 /* Make mailto links visibly underlined for clarity */
 .page-content a[href^="mailto:"] { text-decoration: underline; }
 
+/* TOC Sidebar Layout */
+.toc-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.toc-sidebar {
+  position: sticky;
+  top: 16px;
+  max-height: calc(100vh - 32px);
+  overflow: auto;
+}
+
+.toc-nav {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px;
+  color: #e2e8f0;
+}
+
+.toc-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.toc-list,
+.toc-sublist {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.toc-item.level-2 { margin: 6px 0; }
+.toc-item.level-3 { margin: 4px 0 4px 12px; }
+
+.toc-link {
+  color: #93c5fd;
+  text-decoration: none;
+}
+.toc-link:hover { text-decoration: underline; }
+
+.toc-main {
+  min-width: 0;
+}
+
 /* Max/MSP-like inline object label for `js` or `v8` when used as <code class="max-object">js</code> */
 code.max-object,
 code.max9-object {
