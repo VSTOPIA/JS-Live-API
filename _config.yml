@@ -17,5 +17,9 @@ relative_links:
 markdown_ext: "md,mkd,mkdn,markdown"
 permalink: pretty
 
+# Ensure index.md is used as the site homepage
+readme_index:
+  with_frontmatter: true
+
 sass:
   style: compressed
