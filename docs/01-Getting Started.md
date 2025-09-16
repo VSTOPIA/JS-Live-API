@@ -14,7 +14,7 @@ This tutorial shows how to set up a Max for Live device to run JavaScript code.
 
 To follow along, you need Ableton Live Suite (which comes with Max for Live) or Live Standard edition with the Max for Live add-on. These tutorials were designed for Live 12, but things should mostly work the same in Live 11.
 
-Later tutorials, such as the next one about “Real Time MIDI Processing”, assume you can set up devices as explained here. Skip ahead if you already know how.
+Later tutorials, such as the next one about “[Real Time MIDI Processing](/JS-Live-API/docs/02-Realtime%20MIDI.html)”, assume you can set up devices as explained here. Skip ahead if you already know how.
 
 ## Selecting the Max device type
 

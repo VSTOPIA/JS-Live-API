@@ -10,7 +10,7 @@ permalink: /docs/05-Generating%20MIDI%20Clips.html
 
 > <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
-This is a follow up to “The Live API” tutorial. In this tutorial, we'll use the Live API to generate MIDI clips from scratch with JavaScript code.
+This is a follow up to “[The Live API](/JS-Live-API/docs/04-The%20Live%20API.html)” tutorial. In this tutorial, we'll use the Live API to generate MIDI clips from scratch with JavaScript code.
 
 Once again we'll start with the basic setup from "Getting Started" with a Max MIDI device containing a js object. I named mine midi-clip-gen.js.
 
@@ -57,7 +57,7 @@ if (clipSlot.get("has_clip") == false) {
 Clearing a Clip
 For the purpose of this tutorial, we want to start with a "clean slate" blank clip and re-generate all the notes every time we run our script. So, if the clip already exists let's delete all the notes inside of it. Alternately, we could delete and recreate the clip, but if we are looping the clip while coding and trying out different ideas, deleting the clip will cause playback to stop. By reusing the clip, we get something akin to live coding and can automatically hear the results in a looping clip as we save changes to our script. It's a nice workflow!
 
-To clear all the notes from a clip, first we need to create a Clip object with the Live API. A Clip is a child of ClipSlot so, as we learned in “The Live API”, we access the clip slot's clip by appending "clip" to the ClipSlot path, so for example, here's the Clip in the first clip slot of the first track:
+To clear all the notes from a clip, first we need to create a Clip object with the Live API. A Clip is a child of ClipSlot so, as we learned in “[The Live API](/JS-Live-API/docs/04-The%20Live%20API.html)”, we access the clip slot's clip by appending "clip" to the ClipSlot path, so for example, here's the Clip in the first clip slot of the first track:
 
 ```javascript
 var clip = new LiveAPI("live_set tracks 0 clip_slots 0 clip");

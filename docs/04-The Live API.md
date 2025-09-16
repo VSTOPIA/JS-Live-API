@@ -10,7 +10,7 @@ permalink: /docs/04-The%20Live%20API.html
 
 > <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
-This is a follow-up to the “The Max Console” tutorial. Start with another new Max MIDI Effect device, as explained in “Getting Started”.
+This is a follow-up to the “[The Max Console](/JS-Live-API/docs/03-The%20Max%20Console.html)” tutorial. Start with another new Max MIDI Effect device, as explained in “[Getting Started](/JS-Live-API/docs/01-Getting%20Started.html)”.
 
 In this tutorial we'll learn how to access the different Live objects available to the Live API, how to examine their properties and child objects, and how to make changes to the objects. In the next tutorial, we'll use this knowledge to generate MIDI clips.
 

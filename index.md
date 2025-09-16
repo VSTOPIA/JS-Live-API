@@ -26,11 +26,11 @@ The target audience is people who want to "hack" on Ableton Live and who already
 
 Topics covered include:
 
-- Creating a new Max for Live device that uses JavaScript in "Getting Started"
-- Altering MIDI notes as they are played in "Real Time MIDI Processing"
-- Techniques for understanding and debugging your code in "The Max Console"
-- The basics of using "The Live API" in JavaScript
-- "Generating MIDI Clips" with the Live API, opening the door to algorithmic composition
+- Creating a new Max for Live device that uses JavaScript in [Getting Started](/JS-Live-API/docs/01-Getting%20Started.html)
+- Altering MIDI notes as they are played in [Real Time MIDI Processing](/JS-Live-API/docs/02-Realtime%20MIDI.html)
+- Techniques for understanding and debugging your code in [The Max Console](/JS-Live-API/docs/03-The%20Max%20Console.html)
+- The basics of using [The Live API](/JS-Live-API/docs/04-The%20Live%20API.html) in JavaScript
+- [Generating MIDI Clips](/JS-Live-API/docs/05-Generating%20MIDI%20Clips.html) with the Live API, opening the door to algorithmic composition
 
 The tutorials are designed to be followed in order, where later tutorials assume you know how to do the things from earlier tutorials. Feel free to jump into "Getting Started" if you are eager to start building.
 
@@ -82,7 +82,7 @@ Max 9 introduced <code class="max9-object">v8</code> (and <code class="max9-obje
 
 ## Next Steps
 
-Read “Getting Started” to learn how to setup a Max for Live device with JavaScript.
+Read [Getting Started](/JS-Live-API/docs/01-Getting%20Started.html) to learn how to setup a Max for Live device with JavaScript.
 
 Have feedback or questions? Email the developer: <a href="mailto:adam@adammurray.link">adam@adammurray.link</a> (check spam for replies)
 

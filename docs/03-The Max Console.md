@@ -10,7 +10,7 @@ permalink: /docs/03-The%20Max%20Console.html
 
 > <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the <code class="max9-object">v8</code> JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy <code class="max-object">js</code> object used here.
 
-This is a follow-up to the JavaScript in Live tutorial “Real Time MIDI Processing”. In this tutorial, start with another new Max MIDI Effect device, as explained in “Getting Started”.
+This is a follow-up to the JavaScript in Live tutorial “[Real Time MIDI Processing](/JS-Live-API/docs/02-Realtime%20MIDI.html)”. In this tutorial, start with another new Max MIDI Effect device, as explained in “[Getting Started](/JS-Live-API/docs/01-Getting%20Started.html)”.
 
 To work with JavaScript in Live, we need to be able to understand what our code is doing. One of the best ways to do that is to send messages to the Max Console to check the state of variables and trace the execution of the script. As we saw in previous tutorials, we can use the built-in `post()` function to display messages in the Max Console. This tutorial shows how to use `post()` to display whatever data you want in an understandable way, which is not always straightforward.
 
@@ -48,7 +48,7 @@ Try right-clicking a message for more features.
 
 ## The Built-in `post()` Function
 
-Like in “Getting Started”, run this JavaScript code using a <code class="max-object">js</code> object in a Max device:
+Like in “[Getting Started](/JS-Live-API/docs/01-Getting%20Started.html)”, run this JavaScript code using a <code class="max-object">js</code> object in a Max device:
 
 ```javascript
 post("Hello");
