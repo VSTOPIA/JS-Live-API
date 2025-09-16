@@ -2,48 +2,72 @@
 
 > Attribution: Content adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes have been made. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-This is the 1st of a series of articles about hacking on Ableton Live with JavaScript. These articles assume you own Ableton Live 9 Suite and are comfortable coding JavaScript.
+This is the 1st of a series of articles about hacking on Ableton Live with JavaScript. These articles assume you are comfortable coding JavaScript.
 
 ## Overview
 
-This article explains the setup to run JavaScript code inside Live. If you are already familiar with this setup, you can skip ahead to the next article.
+This article explains how to set up a Max for Live device to run JavaScript code using the legacy `js` object (Max 8 / ES5). If you already know how to do this, you can skip ahead.
 
-## Summary of Steps
+Note: New versions of the tutorials use Max 9’s modern `v8` JavaScript engine (bundled with Live 12.2+). The `v8` engine supports modern syntax and runs faster. This page documents the classic setup with `js` for compatibility.
 
-1. Add a Max Midi Effect device and edit it
-2. Add a "js your-filename.js" object to the Max device
-3. Lock the Max device and double-click the js object to open the JavaScript editor
-4. Save the JavaScript file
-5. Save the Max device in the same folder as the JavaScript file
-6. Bug alert! Now close the Max device and edit it again. The Max device can't find the JavaScript file until we "reboot" like this. This bug should be fixed in the future.
-7. Open the Max Window for logging debug info
-8. Start coding
-9. Save the JavaScript file to run your code
+## Prerequisites
 
-## Detailed Steps
+- Ableton Live Suite (includes Max for Live) or Live Standard + Max for Live add-on
+- Live 12 recommended (Live 11 generally works for this tutorial)
+- Basic JavaScript knowledge
 
-We're going to interact with Live directly through the LiveAPI, so our Max device will not alter the incoming signal. I usually use a MIDI effect in this situation, but you could use an audio effect. The important thing is the MIDI/audio input is passed directly to the MIDI/audio output. These instructions assume we're using a MIDI effect.
+## Selecting the Max device type
 
-Find "Max Midi Effect" under the Max for Live section of the Live browser inside the "Max MIDI Effect" folder. Drag it to a MIDI track (I recommend using a dedicated track to stay organized), then click its edit button. Max will launch, and after a few moments the Max Editor window will appear.
+We will use a Max MIDI Effect device for JavaScript in Live.
 
-### Creating the JavaScript Object
+There are three Max device types:
 
-Double click in some empty space in the Max Editor window, and the Max Object Explorer will appear (if it doesn't, make sure the device is unlocked by using the lock button in the lower left). Type "javascript" into the search box of the Object Explorer. Under the languages category we see "js". Drag "js" into your device and type in a filename, so we have an object that looks like "js your-filename.js".
+- Max Audio Effect
+- Max Instrument
+- Max MIDI Effect
 
-Pro tip: Learn Max keyboard shortcuts. If you type "n" in an unlocked device, it will add an object. Then you can type "js your-filename.js" and hit enter to create a js object.
+For these tutorials we will use Max MIDI Effect devices. JavaScript is not suitable for audio-rate processing (instruments/effects) inside Max, but it works well for MIDI tools and UI logic.
 
-### Testing it Out
+## Creating a Max Device
 
-Every time you save the code in Max's JavaScript editor, it will run. As a quick test, try this simple program:
+1. In Live’s Browser, select "Max for Live".
+2. Drag "Max MIDI Effect" onto a MIDI track (or onto the empty area to create a new track).
+3. Click the device’s Edit button to open the Max editor.
+4. In the patch, remove placeholder comments like "Build your MIDI effect here" to clean up.
+5. Save the device patch.
+
+We leave the MIDI pass-through objects so MIDI continues to flow through the device.
+
+### Creating a `js` Max object
+
+1. In an unlocked patch, add an object (type "n" or use the toolbar Object).
+2. Type: `js your-filename.js`.
+3. Lock the patch (cmd+E / ctrl+E).
+4. Double-click the `js` object to open the JavaScript editor.
+5. Save the file as `your-filename.js` in the same folder as the Max device.
+
+Pro tip: Keyboard shortcuts speed things up—`n` to add objects, `m` for message, `cmd+E/ctrl+E` to lock/unlock.
+
+### Testing it out
+
+Every time you save in Max’s JavaScript editor, your code runs. Try this quick test:
 
 ```javascript
 post("Hello World!");
 ```
 
-You should see "Hello World!" in the Max window, like in this screenshot:
+You should see "Hello World!" in the Max Console:
 
 ![Setup Screenshot](../js-live-api-setup.png)
 
+As a sanity check, change the code and save again:
+
+```javascript
+post("Hello Live!");
+```
+
+If you want each message on its own line, use a newline character: `post("Hello Live!\n");`
+
 ## Next Steps
 
-Alright! Now you're ready to write JavaScript programs inside Ableton Live. In the next article, we'll learn how to set some useful utility code to help us debug our scripts.
+Alright! Now you're ready to write JavaScript programs inside Ableton Live. Next, we’ll add helpful logging utilities and start exploring the Live API.
