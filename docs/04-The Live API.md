@@ -247,9 +247,9 @@ Max documentation resources:
 
 ## Next Steps
 
-The “Generating MIDI Clips” tutorial covers how to algorithmically generate notes into a MIDI clip using the Live API.
+The “[Generating MIDI Clips](/JS-Live-API/docs/05-Generating%20MIDI%20Clips.html)” tutorial covers how to algorithmically generate notes into a MIDI clip using the Live API.
 
-Have feedback or questions? Email: adam@adammurray.link (check spam for replies)
+Have feedback or questions? Email the developer: <a href="mailto:adam@adammurray.link">adam@adammurray.link</a> (check spam for replies)
 
 <p align="center">
   <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
