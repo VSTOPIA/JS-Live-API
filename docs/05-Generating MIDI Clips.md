@@ -418,7 +418,7 @@ clip.call("add_new_notes", {notes: notes});
 Next Steps
 I have made updated versions of all these tutorials for Max 9's new v8 object. It's a very nice update! If you're on the latest version of Max and Live, I highly recommend you try using v8 and v8.codebox instead of the js object.
 
-Have feedback or questions? Email me: adam@adammurray.link (check spam for my replies)
+Have feedback or questions? Email the developer: <a href="mailto:adam@adammurray.link">adam@adammurray.link</a> (check spam for replies)
 
 <p align="center">
   <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
