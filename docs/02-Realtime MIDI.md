@@ -8,8 +8,7 @@ permalink: /docs/02-Realtime%20MIDI.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> [!TIP]
-> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
 
 This tutorial builds on the setup from “Getting Started.” You should be comfortable creating Max for Live devices with `js` objects. Before diving into debugging with the Max Console and the Live API, we’ll build a simple real-time MIDI processor.
 
@@ -203,14 +202,14 @@ function list() {
 Example logs:
 
 ```
-Note on
-pitch=60, velocity=100
-Note on
-Repeat pitch 60, state → 1
-Note on
-Repeat pitch 60, state → 2
-Note on
-Repeat pitch 60, state → 0
+Note on 
+pitch=60, velocity=100 
+Note on 
+Repeat pitch 60, state → 1 
+Note on 
+Repeat pitch 60, state → 2 
+Note on 
+Repeat pitch 60, state → 0 
 ```
 
 Now actually shift octaves on “note on”:
@@ -252,7 +251,7 @@ var noteOffMap = {};
 
 function list() {
   var pitch = arguments[0];
-  var originalPitch = pitch;
+  var originalPitch = pitch; 
   var velocity = arguments[1];
 
   if (velocity > 0) { // note on
@@ -264,16 +263,16 @@ function list() {
       state = PASS_THROUGH; // reset on pitch change
     }
 
-    if (state == OCTAVE_UP) pitch += 12;
-    else if (state == OCTAVE_DOWN) pitch -= 12;
+if (state == OCTAVE_UP) pitch += 12;
+else if (state == OCTAVE_DOWN) pitch -= 12;
 
-    if (pitch != originalPitch) {
-      noteOffMap[originalPitch] = pitch;
-    }
+if (pitch != originalPitch) {
+  noteOffMap[originalPitch] = pitch;
+} 
   } else { // note off
-    var modifiedPitch = noteOffMap[originalPitch];
-    if (modifiedPitch != null) {
-      pitch = modifiedPitch;
+  var modifiedPitch = noteOffMap[originalPitch];
+  if (modifiedPitch != null) {
+    pitch = modifiedPitch;
       noteOffMap[originalPitch] = null;
     }
   }

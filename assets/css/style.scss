@@ -29,6 +29,16 @@ blockquote {
   color: #fff !important;
 }
 
+/* Hide the literal [!TIP] token when wrapped in span */
+.tip-marker { display: none !important; }
+
+/* Warning callouts (red container) */
+blockquote.warning {
+  background-color: #7a1f1f !important; /* dark red */
+  border-left: 6px solid #ff4d4f !important; /* red accent */
+  color: #fff !important;
+}
+
 /* Hide the literal [!TIP] token if it shows */
 blockquote p:first-child {
   /* remove the [!TIP] marker text visually if present */
@@ -45,7 +55,7 @@ img {
 /* Make the small edit button image much smaller */
 img[src$="edit-device-button.png"] {
   display: inline !important;   /* keep inline in text */
-  width: 48px !important;
+  width: 42px !important;
   height: auto !important;
   margin: 0 0.25rem !important; /* small inline spacing, not centered */
   vertical-align: middle !important;

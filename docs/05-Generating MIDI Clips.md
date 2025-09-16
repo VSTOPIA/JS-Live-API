@@ -8,8 +8,7 @@ permalink: /docs/05-Generating%20MIDI%20Clips.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> [!TIP]
-> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
 
 This is a follow up to “The Live API” tutorial. In this tutorial, we'll use the Live API to generate MIDI clips from scratch with JavaScript code.
 

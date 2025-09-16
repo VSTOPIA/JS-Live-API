@@ -8,8 +8,7 @@ permalink: /docs/03-The%20Max%20Console.html
 
 > Attribution: Content copied and adapted from Adam Murray’s “JS in Live” tutorials, licensed under CC BY-NC-SA 4.0. Original: https://adammurray.link/max-for-live/js-in-live/ — Changes may be present. Not endorsed by Adam Murray or Cycling '74. License: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-> [!TIP]
-> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
+> <span class="tip-marker">[!TIP]</span> A new version of this tutorial is available that uses the `v8` JavaScript engine in Max 9 (Live 12.2+), which is far superior to the legacy `js` object used here.
 
 This is a follow-up to the JavaScript in Live tutorial “Real Time MIDI Processing”. In this tutorial, start with another new Max MIDI Effect device, as explained in “Getting Started”.
 
