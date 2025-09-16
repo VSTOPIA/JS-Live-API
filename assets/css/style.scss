@@ -4,43 +4,33 @@
 @import "{{ site.theme }}";
 
 /* Dark theme for code blocks only */
-/* Only code blocks (not whole site) */
-pre, pre.highlight, div.highlighter-rouge, div.highlight, figure.highlight {
+pre, pre.highlight, div.highlighter-rouge, figure.highlight {
   background-color: #0d1117 !important; /* GitHub dark background */
   color: #c9d1d9 !important;            /* GitHub dark foreground */
   border-radius: 6px;
 }
 
-pre code, pre.highlight code, code.highlighter-rouge, div.highlight code, figure.highlight code {
+pre code, pre.highlight code, code.highlighter-rouge {
   background: transparent !important;
   color: inherit !important;
 }
 
-/* Callout style for blockquotes (TIP notes) */
-blockquote {
+code {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+/* GitHub Pages callout style for [!TIP] blocks */
+/* Render blockquotes that start with [!TIP] as green callouts */
+blockquote:has(> p > strong:contains("TIP")),
+blockquote:has(> p:contains("[!TIP]")) {
   background-color: #006b1e; /* dark green */
   border-left: 6px solid #2ea043; /* green border */
   border-radius: 6px;
   padding: 0.8em 1em;
 }
-/* End callout style */
-/* Max/MSP-like inline code label for "js" object */
-code.max9-object {
-  border-radius: 0;
-  padding: 0 5px;
-  background-color: #333;
-  color: #f7f7f7;
-  font-family: Arial, sans-serif;
-  font-weight: 600;
-  font-size: 0.8em;
-  border-top: 4px solid #808080;
-  border-bottom: 4px solid #808080;
-  text-shadow: none;
-  line-height: normal;
-  white-space: nowrap;
-}
 
-/* Inline code styling for v8 label */
-code.v8-object {
-  color: #e6b482;
+/* Hide the literal [!TIP] token if it shows */
+blockquote p:first-child {
+  /* remove the [!TIP] marker text visually if present */
 }
