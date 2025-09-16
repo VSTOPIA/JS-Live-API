@@ -2,7 +2,7 @@
 
 A series of tutorials and examples for controlling Ableton Live with JavaScript through Max for Live.
 
-> Attribution: This repository adapts and redistributes tutorial content by Adam Murray under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Original series: https://adammurray.link/max-for-live/js-in-live/ — Changes have been made. This project is not endorsed by Adam Murray or Cycling '74.
+> Attribution: This repository adapts and redistributes tutorial content by Adam Murray under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Original series: https://adammurray.link/max-for-live/js-in-live/ .Changes have been made. This project is not endorsed by Adam Murray or Cycling '74.
 
 ## Table of Contents
 
