@@ -265,3 +265,8 @@ If you have multiple scripts, include a distinct name in the reload log.
 Now that we’re able to print information from our JavaScript code, we can use this ability to learn the Live API in the next tutorial, “The Live API”.
 
 Have feedback or questions? Email: adam@adammurray.link (check spam for replies)
+
+<p align="center">
+  <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
+  
+</p>

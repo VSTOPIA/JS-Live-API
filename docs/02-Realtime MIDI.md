@@ -335,3 +335,8 @@ function list() {
 The next tutorial, “The Max Console,” shows how to better use `post()` and the Max console to inspect and debug JavaScript in Max for Live. Tired of ending every `post()` with `"\n"`? Read on!
 
 Have feedback or questions? Email: adam@adammurray.link (check spam for replies)
+
+<p align="center">
+  <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
+  
+</p>

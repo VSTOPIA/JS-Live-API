@@ -103,3 +103,8 @@ Were you expecting “Hello Live!” to appear on its own line? Later we’ll le
 We’re ready to build stuff! The next tutorial, “Real Time MIDI Processing”, shows how to use JavaScript to alter MIDI notes as they are played.
 
 Have feedback or questions? Email the developer: adam@adammurray.link (check spam for his replies)
+
+<p align="center">
+  <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
+  
+</p>

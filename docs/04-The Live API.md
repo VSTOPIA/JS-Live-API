@@ -250,3 +250,8 @@ Max documentation resources:
 The “Generating MIDI Clips” tutorial covers how to algorithmically generate notes into a MIDI clip using the Live API.
 
 Have feedback or questions? Email: adam@adammurray.link (check spam for replies)
+
+<p align="center">
+  <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
+  
+</p>

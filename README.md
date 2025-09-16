@@ -89,3 +89,8 @@ Direct links to the updated series:
 
 - Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 - See the [LICENSE](LICENSE) file for details.
+
+<p align="center">
+  <img src="https://vstopia.com/VSTOPIA_MEDIA/VSTOPIA-max-for-live-logo.png" alt="VSTOPIA Max for Live" width="200" />
+  
+</p>
