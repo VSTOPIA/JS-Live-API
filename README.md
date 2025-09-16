@@ -2,135 +2,79 @@
 
 A series of tutorials and examples for controlling Ableton Live with JavaScript through Max for Live.
 
-> Attribution: This repository adapts and redistributes tutorial content by Adam Murray under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Original series: https://adammurray.link/max-for-live/js-in-live/ .Changes have been made. This project is not endorsed by Adam Murray or Cycling '74.
+> Attribution: This repository adapts and redistributes tutorial content by Adam Murray under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Original series: https://adammurray.link/max-for-live/js-in-live/ — Changes have been made. This project is not endorsed by Adam Murray or Cycling '74.
 
 ## Table of Contents
 
 - [Overview](#overview)
-- [Video Tutorial](#video-tutorial)
+- [JavaScript Engines](#javascript-engines)
 - [Prerequisites](#prerequisites)
-- [Tutorial Series](#tutorial-series)
-  - [#1 Setup](docs/01-setup.md)
-  - [#2 Logging & Debugging](docs/02-logging.md)
-  - [#3 API Basics](docs/03-api-basics.md)
-  - [#4 Working with MIDI Clips](#4-working-with-midi-clips)
-    - [Part A: Reading MIDI Data](docs/04-midi-clips.md)
-    - [Part B: Writing MIDI Data](docs/04-midi-clips-b.md)
-  - [#5 Building a User Interface](docs/05-user-interface.md)
-  - [#6 Going Deeper](docs/06-going-deeper.md)
-- [Code Examples](#code-examples)
+- [Learning resources](#learning-resources)
+- [Limitations](#limitations)
+- [Tutorials](#tutorials)
+  - [Getting Started](docs/01-Getting%20Started.md)
+  - [Real Time MIDI Processing](docs/02-Realtime%20MIDI.md)
+  - [The Max Console](docs/03-The%20Max%20Console.md)
+  - [The Live API](docs/04-The%20Live%20API.md)
+  - [Generating MIDI Clips](docs/05-Generating%20MIDI%20Clips.md)
 - [Credits](#credits)
 - [License](#license)
 
 ## Overview
 
-This repository contains code examples and tutorials for programming Ableton Live using JavaScript via Max for Live. The series is designed for developers who own Ableton Live 9 Suite and are comfortable with JavaScript programming.
+These pages are a series of Max for Live tutorials on using JavaScript to extend Live's functionality with Max's built-in JavaScript engine and its Live API.
 
-## Video Tutorial
-[Watch the tutorial on YouTube](https://www.youtube.com/watch?v=VhxTB01oS9Y)
+New versions of these tutorials are available for Max 9's new `v8` object. You need Live 12.2 or higher (or standalone Max 9). `v8` supports modern syntax, is much faster, and has quality-of-life improvements. It’s recommended if you can use it.
+
+## JavaScript Engines
+
+Towards the end of 2024, Max started a transition from an older `js` engine (Max 8, ES5-only) to a modern one (`v8` in Max 9). Live 12.2 bundles Max 9, so `v8` is available out-of-the-box.
+
+- Max 8 `js`: ES5-only, slower; still usable for legacy.
+- Max 9 `v8`: modern JavaScript, significantly faster; recommended.
+
+If you are on Live 12.2+ (or have standalone Max 9), prefer `v8`. The code here generally works on both.
 
 ## Prerequisites
 
-- Ableton Live 9 Suite (or later)
-- Basic JavaScript knowledge
-- Max for Live
+- Ableton Live Suite (with Max for Live) or Live Standard + Max for Live add-on
+- Live 12 recommended; most tutorials also work with Live 11
+- Basic JavaScript (conditionals, loops, functions) and basic Live usage (MIDI clips)
 
-## Tutorial Series
+## Learning resources
 
-### #1 Setup
+- MDN’s JavaScript guide
+- Max learning resources
+- Live learning resources
 
-Learn how to set up your JavaScript development environment within Ableton Live:
+## Limitations
 
-1. Adding a Max MIDI Effect device
-2. Creating a JavaScript object
-3. Setting up the development workflow
-4. Basic debugging setup
+Real-time audio-rate processing is not feasible in `js`/`v8` inside Max’s low-priority thread. Build tools that:
 
-[Detailed Setup Guide](docs/01-setup.md)
+- React to UI at human rates
+- Use timers
+- Process MIDI
 
-### #2 Logging & Debugging
+MIDI occurs at lower rates and works well for algorithmic composition and performance tools. Timing may vary under load, so avoid relying on it for critical live performance without extensive testing.
 
-Learn how to implement robust logging and debugging in your Live JavaScript projects:
+JavaScript in Live is especially well-suited to Live MIDI Tools (Generators and Transformers) that are not in the audio signal path.
 
-1. Understanding the `post()` function
-2. Building a better logging system
-3. Handling different data types
-4. Working with objects and JSON
-5. Supporting multiple parameters
+## Tutorials
 
-[Detailed Logging Guide](docs/02-logging.md)
+- Getting Started: set up a Max for Live device and `js`/`v8` code
+- Real Time MIDI Processing: modify notes on the fly
+- The Max Console: robust logging and debugging
+- The Live API: objects, properties, functions, and paths
+- Generating MIDI Clips: algorithmic clip generation
 
-### #3 API Basics
+Direct links to the updated series:
 
-Learn the fundamentals of interacting with Live's API:
-
-1. Understanding Live API Documentation
-2. Working with Live Objects
-3. Navigating Live Paths
-4. Accessing Properties and Functions
-5. Using `this_device`
-
-[Detailed API Guide](docs/03-api-basics.md)
-
-### #4 Working with MIDI Clips
-
-#### Part A: Reading MIDI Data
-
-1. Accessing MIDI clips through the API
-2. Reading note data
-3. Understanding note properties
-4. Working with selected notes
-5. Building reusable classes
-
-[Detailed MIDI Reading Guide](docs/04-midi-clips.md)
-
-#### Part B: Writing MIDI Data
-
-1. Writing notes to clips
-2. Handling out-of-bounds values
-3. Replacing selected notes
-4. Building a humanize function
-5. Error handling and robustness
-
-[Detailed MIDI Writing Guide](docs/04-midi-clips-b.md)
-
-### #5 Building a User Interface
-
-Learn how to create a Max for Live interface for your JavaScript code:
-
-1. Creating message objects
-2. Building slider controls
-3. Creating popup windows
-4. Organizing the interface
-5. Polishing the final device
-
-Key concepts covered:
-- Calling JavaScript from Max
-- Passing parameters
-- Creating floating windows
-- Interface organization
-- User experience considerations
-
-[Detailed UI Guide](docs/05-user-interface.md)
-
-### #6 Going Deeper
-
-Advanced topics for building production-ready Max for Live devices:
-
-1. Alternative Live paths
-2. Path validation
-3. Observers and callbacks
-4. Property types
-5. Proper device initialization
-
-Key concepts covered:
-- Working with canonical paths
-- Handling invalid paths
-- Using live.thisdevice
-- Best practices for initialization
-- Advanced error handling
-
-[Detailed Advanced Guide](docs/06-going-deeper.md)
+- Overview: https://adammurray.link/max-for-live/js-in-live/
+- Getting Started: `docs/01-Getting Started.md`
+- Real Time MIDI Processing: `docs/02-Realtime MIDI.md`
+- The Max Console: `docs/03-The Max Console.md`
+- The Live API: `docs/04-The Live API.md`
+- Generating MIDI Clips: `docs/05-Generating MIDI Clips.md`
 
 ## Code Examples
 
