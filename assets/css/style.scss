@@ -20,14 +20,13 @@ code {
   color: #c9d1d9 !important;
 }
 
-/* GitHub Pages callout style for [!TIP] blocks */
-/* Render blockquotes that start with [!TIP] as green callouts */
-blockquote:has(> p > strong:contains("TIP")),
-blockquote:has(> p:contains("[!TIP]")) {
-  background-color: #006b1e; /* dark green */
-  border-left: 6px solid #2ea043; /* green border */
-  border-radius: 6px;
-  padding: 0.8em 1em;
+/* Callouts: style blockquotes (TIP boxes) with green container */
+blockquote {
+  background-color: #006b1e !important; /* dark green */
+  border-left: 6px solid #2ea043 !important; /* green border */
+  border-radius: 6px !important;
+  padding: 0.8em 1em !important;
+  color: #fff !important;
 }
 
 /* Hide the literal [!TIP] token if it shows */
@@ -45,7 +44,9 @@ img {
 
 /* Make the small edit button image much smaller */
 img[src$="edit-device-button.png"] {
-  width: 48px;
-  height: auto;
-  margin: 0.5rem auto;
+  display: inline !important;   /* keep inline in text */
+  width: 48px !important;
+  height: auto !important;
+  margin: 0 0.25rem !important; /* small inline spacing, not centered */
+  vertical-align: middle !important;
 }
