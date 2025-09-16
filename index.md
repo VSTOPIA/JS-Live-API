@@ -43,13 +43,13 @@ The tutorials are designed to be followed in order, where later tutorials assume
 
 ## Learning resources
 
-- MDN's JavaScript guide
-- Max learning resources
-- Live learning resources
+- [MDN's JavaScript Guide](https://developer.mozilla.org/docs/Web/JavaScript/Guide)
+- [Max learning resources](https://cycling74.com/learn)
+- [Ableton Learn Live](https://www.ableton.com/live/learn-live/)
 
 ## Limitations
 
-Let's set some expectations about JavaScript running in Live. Real time music applications like Live need to crunch numbers very quickly, and JavaScript isn't fast enough, at least not the way it runs inside Max and Live. The Max docs talk about how JavaScript can't run in Max's high priority thread.
+Let's set some expectations about JavaScript running in Live. Real time music applications like Live need to crunch numbers very quickly, and JavaScript isn't fast enough, at least not the way it runs inside Max and Live. The Max docs talk about how [JavaScript can't run in Max's high priority thread](https://docs.cycling74.com/max8/vignettes/jsliveapi#The_LiveAPI_Object_and_the_Scheduler).
 
 <blockquote class="warning">⚠️ <strong>Important</strong>
 <p>Even when we're working with something that happens at a suitable rate, like MIDI data, JavaScript cannot be relied on for consistent, accurate timing at all times.</p>
