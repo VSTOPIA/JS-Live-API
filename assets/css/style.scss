@@ -61,6 +61,12 @@ img[src$="edit-device-button.png"] {
   vertical-align: middle !important;
 }
 
+/* Ensure links are clickable in content (in case any theme layer disables them) */
+.page-content a { pointer-events: auto !important; }
+
+/* Make mailto links visibly underlined for clarity */
+.page-content a[href^="mailto:"] { text-decoration: underline; }
+
 /* Max/MSP-like inline object label for `js` or `v8` when used as <code class="max-object">js</code> */
 code.max-object,
 code.max9-object {
